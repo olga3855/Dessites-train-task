@@ -1,0 +1,279 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat';
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  background: url(./assets/bg.png) center / cover no-repeat;
+}
+
+header {
+  margin: 2.24vw 10.52vw 0 9.11vw;
+}
+
+hr {
+  margin-top: 1.98vw;
+  opacity: 0.9;
+}
+
+.about {
+  display: flex;
+  font-size: 0.63vw;
+  justify-content: space-between;
+}
+
+.telephone {
+  p:nth-child(2) {
+    font-weight: 600;
+    font-size: 1.15vw;
+    line-height: 1.41vw;
+    color: #1C1C1C;
+  }
+}
+
+.order__link {
+  color: rgba(18, 200, 104, 1);
+  text-decoration: none;
+  border-bottom: 1px dashed rgba(18, 200, 104, 1);
+}
+
+.information p:nth-child(2) {
+  line-height: 1.94vw;
+}
+
+.main__contacts {
+  padding: 1.93vw 0;
+  margin-left: 55%;
+
+  img {
+    &:hover {
+      transform: translateY(2px);
+      opacity: 0.3;
+    }
+  }
+}
+
+.main__contacts {
+  div {
+    margin: 0.4vw 0 0 0.3vw;
+  }
+}
+
+.telephone {
+  margin-top: 1.88vw;
+  text-align: center;
+  line-height: 1vw;
+
+  a {
+    font-size: 0.8vw;
+  }
+}
+
+.logo {
+  img {
+    width: 14.27vw;
+    height: 7.71;
+  }
+}
+
+.main__aside {
+  font-size: 0.73vw;
+  text-align: center;
+  width: 62%;
+  border-radius: 1.04vw;
+  margin: 0 3.70vw 2.86vw 9.11vw;
+  background: #FFFFFF;
+  box-shadow: 0px 0px 75px rgba(0, 0, 0, 0.03);
+
+  img {
+    cursor: pointer;
+    width: 100%;
+  }
+
+  div:first-child {
+    padding: 3.28vw 2.14vw 1.25vw;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.08);
+  }
+
+  div:nth-child(2) {
+    padding: 1.25vw 2.09vw;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.08);
+  }
+}
+
+main {
+  display: flex;
+
+  .main__text {
+    background-image: linear-gradient(to left,
+        rgba(250, 250, 250, 0.7) 0%,
+        rgba(255, 254, 254, 0.6) 45%,
+        transparent);
+    padding-right: 3%;
+  }
+
+  h1 {
+    font-size: 2.55vw;
+    font-weight: 300;
+    line-height: 4.43vw;
+    display: inline-block;
+  }
+
+  h3 {
+    display: inline-block;
+    font-size: 1vw;
+    font-weight: 400;
+  }
+
+  .contact_us {
+    h4 {
+      font-size: 18px;
+      margin-left: 23%;
+    }
+  }
+
+  .contact_us {
+    margin-top: 1.5vw;
+
+    span {
+      font-size: 0.73vw;
+      text-transform: uppercase;
+      font-weight: 600;
+      color: #FFFFFF;
+    }
+
+
+    button {
+      width: 10vw;
+      height: 3vw;
+      background: #12C868;
+      border-radius: 26.04vw;
+      border: none;
+      margin-left: 22%;
+
+      &:hover {
+        background: #21E27C;
+      }
+    }
+  }
+
+  .contacts {
+    input {
+      background-color: #f4fafe;
+      border: none;
+    }
+  }
+
+  .box1,
+  .box2 {
+    padding: 3% 4%;
+  }
+
+  .contacts {
+    margin: 1% 10% 1%;
+    margin-right: 50%;
+    display: grid;
+    gap: 15px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+      "A B"
+      "C C"
+      "C C";
+
+    input {
+
+      &::placeholder {
+        font-size: 14px;
+        color: #314584;
+      }
+    }
+  }
+
+  .box1 {
+    grid-area: A;
+    border-radius: .8vw;
+  }
+
+  .box2 {
+    grid-area: B;
+    border-radius: .8vw;
+  }
+
+  .box3 {
+    grid-area: C;
+    padding: 2% 5% 10% 3%;
+    border-radius: 1.04vw;
+  }
+}
+
+.btn button {
+  font-size: 0.73vw;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 26.04vw;
+  margin-top: 2.34vw;
+
+  span {
+    display: inline-block;
+    text-align: center;
+  }
+
+  &:first-child {
+    padding: 1.2vw 1.61vw 1.2vw 1.8vw;
+    width: 18vw;
+    height: 4vw;
+    background: #12C868;
+    margin-right: 0.94vw;
+
+    &:hover {
+      background: #21E27C;
+    }
+  }
+
+  &:nth-child(2) {
+    width: 18vw;
+    height: 4vw;
+    background: #F38120;
+    padding: 1.2vw 1.61vw 1.2vw 1.8vw;
+
+    &:hover {
+      background: #FD9C49;
+    }
+  }
+}
+
+//  _______________navigation________________
+
+.navigation {
+
+  ul {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .navigation__item {
+    display: inline-block;
+
+    .navigation__link {
+      text-decoration: none;
+      text-transform: uppercase;
+      font-weight: 700;
+      font-size: 0.8vw;
+      color: rgba(28, 28, 28, 1);
+
+      &:hover {
+        color: rgba(243, 129, 32, 1);
+        text-decoration: underline;
+      }
+    }
+  }
+}
